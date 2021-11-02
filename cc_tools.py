@@ -150,5 +150,5 @@ async def check_sk_key(client, message):
     if not key_:
         return await msg.edit("`Give Me A Key To Check.`")
     key_result = await check_stripe_key(key_)
-    _result_to_show = f"<b><u>Stripe Key Check Result</b></u> \n<b>Key :</b> <code>{key_}</code> \n<b>Response :</b> <code>{my_code[key_result]}</code> \n<b><u>Check Using FridayUB</b></u>"
+    _result_to_show = f"<b><u>Stripe Key Check Result</b></u> \n<b>Key :</b> <code>{key_}</code> \n<b>Response :</b> <code>{my_code[key_result]}</code> \n<b><u>Check Using FridayUb</b></u>"
     await msg.edit(_result_to_show)
