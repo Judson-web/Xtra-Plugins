@@ -32,15 +32,15 @@ async def nice_qbot(client, message):
         if not query.isdigit():
             return await m.edit("`Uh? Only Digits My Friend.`")
         if int(query) == 0:
-            return await m.edit("`Uh?, You Are Zero.`")
+            return await m.edit("`Uh?, Try Again.`")
         async for msg in client.iter_history(chat_id=message.chat.id, reverse=True, limit=int(query)):
             if message.message_id != msg.message_id:
                 msg_ids.append(msg.message_id)
     if not msg_ids:
-        return await m.edit("`Uh?, You Are Zero.`")
-    await client.forward_messages("@QuotLyBot", message.chat.id, msg_ids) 
+        return await m.edit("`Uh?, Tey Again.`")
+    await client.forward_messages("@storytym", message.chat.id, msg_ids) 
     await asyncio.sleep(7)
-    histor_ = await check_history("@QuotLyBot", client)
+    histor_ = await check_history("@storytym", client)
     if not histor_:
         return await m.edit("`Invalid or No Response Recieved.`")
     if message.reply_to_message:
