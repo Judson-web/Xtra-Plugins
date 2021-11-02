@@ -52,7 +52,6 @@ Time:- {ar}
 Place:- {place}
 Status:- {status}
 Detailed link:- {urlo}
-<u><b>Ekart Search Completed By Friday.
-Get Your Own Friday From @FRIDAYCHAT.</b></u>
+<u><b>Ekart Search Completed By Friday.</b></u>
 """
     await pablo.edit(caption, parse_mode="HTML")
