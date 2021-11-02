@@ -63,7 +63,7 @@ async def job_close():
     for warner in lol:
         try:
             await Friday.send_message(
-              int(warner.get("chat_id")), "`12:00 Am, Group Is Closing Till 6 Am. Night Mode Started !` \n**Powered By @FRidayOT**"
+              int(warner.get("chat_id")), "`12:00 Am, Group Is Closing Till 6 Am. Night Mode Started !` \n**Powered By @storytym**"
             )
             await Friday.set_chat_permissions(warner.get("chat_id"), ChatPermissions())
             async for member in Friday.iter_chat_members(warner.get("chat_id")):
@@ -88,7 +88,7 @@ async def job_open():
     for warner in lol:
         try:
             await Friday.send_message(
-              int(warner.get("chat_id")), "`06:00 Am, Group Is Opening.`\n**Powered By @FRidayOT**"
+              int(warner.get("chat_id")), "`06:00 Am, Group Is Opening.`\n**Powered By @storytym**"
             )
             await Friday.set_chat_permissions(
                         warner.get("chat_id"),
